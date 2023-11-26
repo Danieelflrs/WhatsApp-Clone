@@ -1,0 +1,11 @@
+ - PRELOADER (Check images " preloader1 & preloader2 " for reference)
+ On the main.js file the feature that handle the 'hidden' feature is " contentWrap.style.display = 'block' ";
+ 
+- Search bar function  (Check image "Search-bar-code")
+It'll be located on the div with the class "Search" into div with class "side-bar"
+on the file searchbar.js the class "user" is the one that is similar to "articulo" in the video, 
+all the users must contain that class 
+
+-Scroll feature for side bar with the online people and also for the chat-box
+(Check the following link for reference https://www.youtube.com/watch?v=JD4Yd7gRvoY )
+It'll be located at the same div than the online-people (on the sidebar) and also 

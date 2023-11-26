@@ -1,0 +1,32 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.chat-container{
+    background-color: #111b21;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.side-bar{
+    display: inline-flex;
+    overflow: auto;
+    box-sizing: border-box; /* Añadido */
+    width: 30%;
+    height: 100vh;
+    background-color: #12915c;
+}
+
+.cuadro-chat{
+    display: inline-flex;
+    box-sizing: border-box; /* Añadido */
+    width: 69%;
+    height: 100vh;
+    background-color: #02321e;
+    overflow: auto;
+}

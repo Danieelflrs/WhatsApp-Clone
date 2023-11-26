@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+        <meta charset="utf-8"/>
+        <title>WhatsApp</title>
+        <link rel="icon" href=".\resources\WhatsApp-Logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="/css/index.css"/>
+        <link rel="stylesheet" href="/css/loader.css"/>
+        <link rel="stylesheet" href="/css/chat.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://kit.fontawesome.com/e3c82e1165.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="nick-wrap" class="nick-wrap">
+            <div id="card-header" class="card-header">
+                <img class = 'wha-login-img' src=".\resources\WhatsApp-Logo.png" alt='logo'/>
+                <p class="wha-login-txt">WHATSAPP WEB</p>
+            </div>
+            <p id="nick-error"></p>
+            <div id="card-body" class="card-body">
+                <div class="indicaciones">
+                    <p class="titulo-indicacion">Usa WhatsApp en tu computadora</p>
+                    <p class="indicacion">1. Abre WhatsApp en tu teléfono.</p>
+                    <p class="indicacion">2. Toca <b>Menú</b><img src="./resources/icons/menu-i.png" class="instruction-i"> o <b>Configuración</b><img src="./resources/icons/settings-i.png" class="instruction-i"> y selecciona <b>Dispositivos vinculados</b>.</p></li>
+                    <p class="indicacion">3. Toca <b>Vincular un dispositivo.</b></p>
+                    <p class="indicacion">4. Ingresa el nombre de Usuario.</p>
+                    <form id="nick-form" class="nick-form">
+                        <img src="./resources/icons/person-i.png" class="person-i">
+                        <input type="text" id="nickname" class="nickname-login" placeholder="Ingrese su nombre de usuario" required maxlength="15">
+                        <button type="submit" class="submit-login"><img src="./resources/icons/send-i.png" class="send-i"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="preload-page" id="preload-page">
+            <div class="preload-container">
+                <div class="preloader" id="preloader">
+                    <img src="./resources/images/preloader.png" class="preload-img">
+                    <div class="loading-bar">
+                        <div class="loading-per" per="100%" ></div>
+                    </div>
+                    <p class="preload-loadtxt">Cargando tus chats...</p>
+                    <p class="preload-loadsecure"><i class="fa-solid fa-lock" style="color: #667781;"></i> Cifrado de extremo a extremo</p>
+                </div>
+            </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div id="content-wrap" class="chat-container">
+            <div class="side-bar">
+                <div class="search">
+                    <input type="text" class="search-bar" placeholder="Buscar un chat...">
+                </div>
+                <div class="online-ppl"></div>
+            </div>
+            <div class="cuadro-chat">
+                <div class="chat-desc">
+                    <input type="text" class="search-bar" placeholder="Buscar un chat...">
+                </div>
+                <div class="chat-box"></div>
+                <div class="message-form"></div>
+            </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- <div id = "content-wrap" class="chat-container">
+            <h4>Let's chat</h4>
+            <div id = "chat"></div>
+            <form id = "message-form">
+                <input type="text" id="message">
+                <input type="submit" id="submit">
+            </form>
+            <div>
+                <div>
+                    <p>Usuarios En Linea</p>
+                </div>
+                <div id="usernames"></div>
+            </div>
+        </div> -->
+        <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+        <script src="/js/main.js" charset="utf-8"></script>
+    </body>
+</html>

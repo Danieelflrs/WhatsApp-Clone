@@ -1,0 +1,63 @@
+.preload-page{
+    display: none;
+}
+.preload-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #111b21;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.preloader{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.preload-img{
+    width: 400px;
+    height: auto;
+}
+
+.loading-bar{
+    width: 350px;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 10px
+}
+
+.loading-per{
+    height: 4px;
+    background-color: #0b846d;
+    max-width: 100%;
+    position: relative;
+    animation: fillBar 4s 1;
+}
+
+@keyframes fillBar{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+.preload-loadtxt{
+    width: fit-content;
+    font-family: 'Roboto', sans-serif;
+    color: #b9cbd2;
+    font-weight: 400;
+}
+
+.preload-loadsecure{
+    width: fit-content;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: #637270;
+    font-weight: 300;
+}
